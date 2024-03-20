@@ -41,6 +41,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         </p>
       </details>
     </header>
+
+    <!-- <model-viewer src="path/to/your/model.usdz" alt="A 3D model" ios-src="path/to/your/model.usdz" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" shadow-intensity="1" auto-rotate camera-controls></model-viewer> -->
+
     <script type="module">
       import {WebXRButton} from './js/util/webxr-button.js';
       import {Scene} from './js/render/scenes/scene.js';
@@ -67,7 +70,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'media/gltf/Ev/scooter1.gltf'});
+      let flower = new Gltf2Node({url: 'https://cdn.glitch.me/5e89d306-9209-4e48-944d-99eb8a549e85/spy-hypersport.glb?v=1710934765651'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
