@@ -34,9 +34,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Hit Test</summary>
+        <summary>Check AR</summary>
         <p>
-          This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
+          Touch the reticle to place virtual objects on real-world surfaces.
           <a class="back" href="./">Back</a>
         </p>
       </details>
@@ -105,7 +105,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       }
 
       function onRequestSession() {
-        return navigator.xr.requestSession('immersive-ar', {requiredFeatures: ['local', 'Check AR']})
+        return navigator.xr.requestSession('immersive-ar', {requiredFeatures: ['local', 'hit-test']})
                            .then((session) => {
           xrButton.setSession(session);
           onSessionStarted(session);
